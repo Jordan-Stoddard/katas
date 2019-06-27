@@ -22,7 +22,7 @@ penny: 1 cent / $0.01
 
 function changeEnough(change, amountDue) {
     const quarters = (change[0] * 25 * .01)
-    // const dimes = (change[1] * 10 * .01)
+    const dimes = (change[1] * 10 * .01)
     // const nickels = (change[2] * 5 * .01)
     // const pennies = (change[3] * 1 * .01)
     // const amountHave = (quarters + dimes + nickels + pennies)

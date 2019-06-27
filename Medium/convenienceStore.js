@@ -25,7 +25,7 @@ function changeEnough(change, amountDue) {
     const dimes = (change[1] * 10 * .01)
     const nickels = (change[2] * 5 * .01)
     const pennies = (change[3] * 1 * .01)
-    // const amountHave = (quarters + dimes + nickels + pennies)
+    const amountHave = (quarters + dimes + nickels + pennies)
 
     // if (amountHave < amountDue) {
     //     return false

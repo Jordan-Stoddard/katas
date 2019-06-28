@@ -16,6 +16,8 @@
 // if not continue
 // Once you've reached the end of the loop, return the array.
 
+// Runtime complexity O(n)
+
 function factorize(num) {
 	let arr = []
 	for (let i = 1; i <= num; i++) {

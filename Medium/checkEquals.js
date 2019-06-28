@@ -27,6 +27,12 @@
 
 // checkEquals([4, 7, 6], [4, 5, 6]) ➞ false
 
+
+// loop over arr1, checking the current index against the same index of arr2.
+// If the values are the same, continue, else return false.
+// If we make it through to the end of the loop statement, return true.
+
+
 function checkEquals(arr1, arr2) {
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] === arr2[i]) {

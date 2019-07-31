@@ -8,7 +8,7 @@
 // For a = [1, 0, 1, 1, 1, 0, 1, 0, 1], the output should be longestEqualSubarray(a) = 4
 
 // There are 2 subarrays of length 4 with an equal number of 0s and 1s: a[4..7] = [1, 0, 1, 0] and a[5..8] = [0, 1, 0, 1] (0-based) 
-// There are no subarrays of a greater length with an equal number of 0s and 1s, so the answer is 4
+// There are no subarrays of a greater length with an equal number of 0s and 1s, so the answer is 4.
 
 // For a = [0, 0, 0, 1, 1, 1, 1, 1, 0, 0], the output should be longestEqualSubarray(a) = 10.
 

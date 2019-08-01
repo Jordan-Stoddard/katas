@@ -1,7 +1,7 @@
 //Codewriting
 
 //Given an array of integers a containing only 0s and 1s, your task is to find the length of the longest subarray that has an equal number of 0s and 1s.
-// If there is no such subarray, the answer should be 0
+// If there is no such subarray, the answer should be 0.
 
 // Example
 

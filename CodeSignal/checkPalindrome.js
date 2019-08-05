@@ -10,7 +10,7 @@
 
 
 function checkPalindrome(inputString) {
-    return inputString.reverse() === inputString;
+    return inputString.split('').reverse().join('') === inputString;
 }
 
 console.log(checkPalindrome('aabaa')) // true

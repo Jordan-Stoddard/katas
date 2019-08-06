@@ -39,9 +39,3 @@ function longestEqualSubarray(a) {
 
 
 console.log(longestEqualSubarray(a))
-
-int i; 
-2 for (i = 0; i < 10; i++) {} 
-3 int x = i;
-
-console.log(x)

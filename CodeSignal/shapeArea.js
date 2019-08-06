@@ -15,8 +15,9 @@
 // shapeArea(n) = 13.
 
 function shapeArea(n) {
-
+    return (1 + (n-1)*n) * 2 - 1
 }
+
 
 console.log(shapeArea(1)) // 1
 console.log(shapeArea(2)) // 5

@@ -46,10 +46,10 @@ function almostIncreasingSequence(sequence) {
 
 }
 
-// console.log(almostIncreasingSequence([1, 3, 2, 1])); // false
-// console.log(almostIncreasingSequence([1, 3, 2])); // true
-// console.log(almostIncreasingSequence([1, 2, 1, 2])); // false
-// console.log(almostIncreasingSequence([3, 6, 5, 8, 10, 20, 15])); // false
-// console.log(almostIncreasingSequence([10, 1, 2, 3, 4, 5])); // true
+console.log(almostIncreasingSequence([1, 3, 2, 1])); // false
+console.log(almostIncreasingSequence([1, 3, 2])); // true
+console.log(almostIncreasingSequence([1, 2, 1, 2])); // false
+console.log(almostIncreasingSequence([3, 6, 5, 8, 10, 20, 15])); // false
+console.log(almostIncreasingSequence([10, 1, 2, 3, 4, 5])); // true
 console.log(almostIncreasingSequence([3, 5, 67, 98, 3])); // true
-// console.log(almostIncreasingSequence([1, 1, 2, 3, 4, 4])); // false
+console.log(almostIncreasingSequence([1, 1, 2, 3, 4, 4])); // false

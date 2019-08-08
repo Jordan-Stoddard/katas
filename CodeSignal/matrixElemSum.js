@@ -36,28 +36,35 @@
 // return sum
 
 function matrixElementsSum(matrix) {
-    let sum = 0;
-    let columnTracker = {}
+  let sum = 0;
+  let columnTracker = {};
 
-    for (let i = 0; i < matrix.length; i++) {
-            let currentRow = matrix[i]
-        for (let j = 0; j < currentRow.length; j++) {
-            let currentRowItem = currentRow[j]
-            // Initialize our columnTracker
-            if (!(j in columnTracker)) {
-                if (currentRowItem > 0) {
-                    columnTracker[j] = true;
-                } else {
-                    columnTracker[j] = false
-                }
-            }
-
-        
-
+  for (let i = 0; i < matrix.length; i++) {
+    let currentRow = matrix[i];
+    for (let j = 0; j < currentRow.length; j++) {
+      let currentRowItem = currentRow[j];
+      // Initialize our columnTracker
+      if (!(j in columnTracker)) {
+        if (currentRowItem > 0) {
+          columnTracker[j] = true;
+        } else {
+          columnTracker[j] = false;
         }
+      }
+
+      if (columnTracker[j]) {
+        if (currentRowItem >= 1) {
+          sum += currentRowItem;
+        } else {
+          columnTracker[j] = false;
+        }
+      } else {
+        continue;
+      }
     }
+  }
 
-
+  return sum
 }
 
 console.log(matrixElementsSum([[0, 1, 1, 2], [0, 5, 0, 0], [2, 0, 3, 3]])); // 9

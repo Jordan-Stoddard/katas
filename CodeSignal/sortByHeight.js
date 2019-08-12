@@ -16,4 +16,4 @@ console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180])) // [-1, 150, 16
 console.log(sortByHeight([-1, -1, -1, -1, -1])) // [-1, -1, -1, -1, -1]
 console.log(sortByHeight([-1])) // [-1]
 console.log(sortByHeight([4, 2, 9, 11, 2, 16])) // [2, 2, 4, 9, 11, 16]
-console.log(sortByHeight([2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1])) 
+console.log(sortByHeight([2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1])) // [1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2]

@@ -11,3 +11,10 @@ function commonCharacterCount(s1, s2) {
 
 }
 
+
+
+console.log(commonCharacterCount('aabcc', 'adcaa')) // 3
+console.log(commonCharacterCount("zzzz", "zzzzzzz")) // 4
+console.log(commonCharacterCount("abca", "xyzbac")) // 3
+console.log(commonCharacterCount("a", "b")) // 0
+console.log(commonCharacterCount("a", "aaa")) // 1

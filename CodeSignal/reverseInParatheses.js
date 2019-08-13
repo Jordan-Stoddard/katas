@@ -14,6 +14,14 @@
 // reverseInParentheses(inputString) = "foobazrabblim".
 // Because "foo(bar(baz))blim" becomes "foo(barzab)blim" and then "foobazrabblim".
 
+// If 
+
 function reverseInParentheses(inputString) {
 
 }
+
+console.log(reverseInParentheses("(bar)")) // rab
+console.log(reverseInParentheses("foo(bar)baz")) // foorabbaz
+console.log(reverseInParentheses("foo(bar)baz(blim)")) // foorabbazmilb
+console.log(reverseInParentheses("foo(bar(baz))blim")) // foobazrabblim
+console.log(reverseInParentheses("(abc)d(efg)")) // cbadgfe

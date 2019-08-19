@@ -17,28 +17,33 @@
 
 // If inputString.length === 0 or inputString === "()" return ''
 
-// create a helper function that returns true or false if there's a nested set.
 
-// if nested loop through and count the number of opening parenths.
-// if current letter is ( and 
-
-// Initialize a finalString,
-// open check, closed check, nested check
-// return index
-// loop through inputString
-// if not open concat to final string
-// if ( concat and make open, save return index
-// if open, count until closed
-// if ( and open, 
 
 
 
 
 function reverseInParentheses(inputString) {
-    return inputString.split('').reverse().join('')
+    let m = inputString.match(/\(\w*\)/);
+
+while (m) {
+    inputString = inputString.split('');
+    inputString.splice(
+        m.index, 
+        m[0].length, 
+        m[0].replace(')', '')
+         .replace('(', '')
+         .split('')
+         .reverse()
+         .join(''));
+    inputString = inputString.join('');
+    
+    m = inputString.match(/\(\w*\)/);
 }
 
-console.log(reverseInParentheses("(bar)")) // rab
+return inputString;
+}
+
+// console.log(reverseInParentheses("(bar)")) // rab
 // console.log(reverseInParentheses("foo(bar)baz")) // foorabbaz
 // console.log(reverseInParentheses("foo(bar)baz(blim)")) // foorabbazmilb
 console.log(reverseInParentheses("foo(bar(baz))blim")) // foobazrabblim

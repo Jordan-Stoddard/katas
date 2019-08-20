@@ -27,6 +27,8 @@ function reverseInParentheses(inputString) {
 
 while (m) {
     inputString = inputString.split('');
+    console.log(inputString)
+    console.log(m.index, m[0].length)
     inputString.splice(
         m.index, 
         m[0].length, 
@@ -45,6 +47,6 @@ return inputString;
 
 // console.log(reverseInParentheses("(bar)")) // rab
 // console.log(reverseInParentheses("foo(bar)baz")) // foorabbaz
-// console.log(reverseInParentheses("foo(bar)baz(blim)")) // foorabbazmilb
-console.log(reverseInParentheses("foo(bar(baz))blim")) // foobazrabblim
+console.log(reverseInParentheses("foo(bar)baz(blim)")) // foorabbazmilb
+// console.log(reverseInParentheses("foo(bar(baz))blim")) // foobazrabblim
 // console.log(reverseInParentheses("(abc)d(efg)")) // cbadgfe

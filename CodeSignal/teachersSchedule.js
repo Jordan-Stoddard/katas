@@ -16,6 +16,12 @@ async function suggestSchedule(parentRequest, teacher) {
   }
   */
     const teacherAvailability = await getTeacherAvailability(teacher)
+
+    // teachersSchedule returns an array of objects, with classes that are already scheduled. Like so:
+
+    /*
+    [{start_time: <time>, end_time: <time>}, {start_time: <time>, end_time: time}, ...etc]
+    */
     const teacherSchedule = await getTeacherSchedule(teacher)
     
       for (let day in teacherAvailability) {
